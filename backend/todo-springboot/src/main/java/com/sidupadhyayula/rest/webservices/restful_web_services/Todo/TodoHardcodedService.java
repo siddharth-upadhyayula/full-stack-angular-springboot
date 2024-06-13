@@ -14,11 +14,30 @@ public class TodoHardcodedService {
 	
 	static {
 		todos.add(new Todo(++idCounter, "sid", "Learn Spring", new Date(), false));
-		todos.add(new Todo(++idCounter, "sid", "Learn Angular", new Date(), false));
-		todos.add(new Todo(++idCounter, "sid", "Learn CI/CD", new Date(), false));
+		todos.add(new Todo(++idCounter, "sid", "Learn Angular", new Date(), true));
+		todos.add(new Todo(++idCounter, "sid", "Learn CI/CD", new Date(), true));
 	}
 
 	public List<Todo> findAll(){
 		return todos;
+	}
+	
+	public Todo deleteById(long id) {
+		Todo todo = findById(id);
+		if(todo==null) return null;
+		
+		if(todos.remove(todo)) {
+			return todo;
+		}
+		return todo;
+	}
+
+	public Todo findById(long id) {
+		for(Todo todo:todos) {
+			if(todo.getId() == id) {
+				return todo;
+			}
+		}
+		return null;
 	}
 }
