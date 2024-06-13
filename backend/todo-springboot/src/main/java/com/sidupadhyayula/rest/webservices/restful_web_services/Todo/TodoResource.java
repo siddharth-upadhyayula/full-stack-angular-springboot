@@ -9,6 +9,8 @@ import com.sidupadhyayula.rest.webservices.restful_web_services.Todo.Todo;
 @RestController
 public class TodoResource {
 	
+	private TodoHardcodedService todoService;
+	
 	public List<Todo> getAllTodos(String username){
 		
 	}
