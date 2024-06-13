@@ -2,17 +2,20 @@ package com.sidupadhyayula.rest.webservices.restful_web_services.Todo;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.sidupadhyayula.rest.webservices.restful_web_services.Todo.Todo;
 
 @RestController
 public class TodoResource {
 	
+	@Autowired
 	private TodoHardcodedService todoService;
 	
-	public List<Todo> getAllTodos(String username){
-		
+	@GetMapping("/users/{username}/todos")
+	public List<Todo> getAllTodos(@PathVariable String username){
+		return todoService.findAll();
 	}
 
 }
