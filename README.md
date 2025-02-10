@@ -7,12 +7,13 @@ This repository contains a Full Stack To-Do Application built using Spring Boot 
 1️⃣ Backend (backend/todo-springboot/)
 
 The backend is developed using Spring Boot, exposing RESTful web services for managing to-do items. It also includes Basic Authentication with Spring Security.
-
+```
 🔹 Backend Components
 	•	Spring Boot application that serves RESTful APIs.
 	•	Spring Security for authentication and authorization.
 	•	Hardcoded in-memory data service for managing to-do tasks.
-
+```
+```
 📁 Key Files & Folders:
 	•	src/main/java/com/sidupadhyayula/rest/webservices/restful_web_services/
 	•	RestfulWebServicesApplication.java - The main entry point of the Spring Boot application.
@@ -27,17 +28,18 @@ The backend is developed using Spring Boot, exposing RESTful web services for ma
 	•	src/main/resources/application.properties - Contains configuration settings.
 	•	pom.xml - Defines dependencies for the Spring Boot project.
 	•	.mvn/wrapper/maven-wrapper.properties - Used for Maven build automation.
-
+```
 2️⃣ Frontend (frontend/todo/)
 
 The frontend is built using Angular and provides a user-friendly UI for task management.
-
+```
 🔹 Frontend Components
 	•	Angular modules & components for UI and routing.
 	•	Authentication service for login/logout.
 	•	HTTP interceptors for API communication.
 	•	Route guards for protecting pages.
-
+```
+```
 📁 Key Files & Folders:
 	•	src/app/
 	•	app.module.ts - Root Angular module.
@@ -63,23 +65,24 @@ The frontend is built using Angular and provides a user-friendly UI for task man
 	•	tsconfig.json - TypeScript configuration.
 	•	.gitignore - Excludes unnecessary files.
 	•	README.md - Project documentation.
-
+```
 ✅ Features
 
 🌐 Backend (Spring Boot)
-
+```
 ✔ REST API for to-do tasks
 ✔ Spring Security-based authentication
 ✔ Hardcoded in-memory data service
 ✔ Modular structure with controllers, services, and models
+```
 
 🎨 Frontend (Angular)
-
+```
 ✔ Login & logout functionality
 ✔ To-Do list with CRUD operations
 ✔ Route protection with Angular Route Guards
 ✔ API integration with Spring Boot
-
+```
 🛠️ Setup Instructions
 
 1. Backend Setup
