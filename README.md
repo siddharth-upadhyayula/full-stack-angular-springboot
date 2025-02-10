@@ -1,6 +1,4 @@
-Full Stack To-Do Application (Angular + Spring Boot)
-
-Repository Overview
+Overview
 
 This repository contains a Full Stack To-Do Application built using Spring Boot for the backend and Angular for the frontend. The project follows a modular structure, adhering to best practices in full-stack web application development. It features user authentication, task management, and a responsive UI.
 
@@ -85,19 +83,20 @@ The frontend is built using Angular and provides a user-friendly UI for task man
 🛠️ Setup Instructions
 
 1. Backend Setup
-
+```
 cd backend/todo-springboot
 mvn spring-boot:run
-
-	•	Runs the Spring Boot backend on http://localhost:8080.
+```
+•	Runs the Spring Boot backend on http://localhost:8080.
 
 2. Frontend Setup
-
+```
 cd frontend/todo
 npm install
 ng serve
+```
 
-	•	Runs the Angular app on http://localhost:4200.
+•	Runs the Angular app on http://localhost:4200.
 
 📌 Conclusion
 
